@@ -1,10 +1,9 @@
-media = []
+soma = 0
 
 for i in range(4):
+    nota = float(input(f"Informe a {i + 1}° nota: "))
+    soma += nota
 
-    nota = float(input(f"Digita a a {i + 1}ª nota: "))
-    media.append(nota)
+media = soma / 4
 
-    medias = sum(media) / len(media)
-
-print(f"A média do aluno é: {medias:.1f}")
+print(f"A média das notas é: {media:.1f}")
